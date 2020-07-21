@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="这是我们自己的测试套件">
+    <test name="这是我们自己的测试模块">
+        <classes>
+            <class name="com.tester.extent.demo.TestMethodDemo">
+                <methods>
+                    <include name="test01"/>
+                    <include name="test02"/>
+                    <include name="test03"/>
+                    <include name="logDemo"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="com.tester.extent.demo.ExtentTestNGIReportListener"/>
+    </listeners>
+
+</suite>

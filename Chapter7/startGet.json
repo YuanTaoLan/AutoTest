@@ -1,0 +1,32 @@
+[
+  {
+    "description": "这是一个测试GET请求不带参数的Demo",
+    "request": {
+      "uri": "/get",
+      "method": "get"
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "这是一个没有参数的get请求"
+    }
+  },
+  {
+    "description": "这是一个测试GET请求带参数的Demo",
+    "request": {
+      "uri": "/getwithparam",
+      "method": "get",
+      "queries": {
+        "name": "zhangyuantao",
+        "age": "23"
+      }
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "这是一个带参数的get请求，我是张远涛，我23岁了"
+    }
+  }
+]

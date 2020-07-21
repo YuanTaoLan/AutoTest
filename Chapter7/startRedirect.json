@@ -1,0 +1,31 @@
+[
+  {
+    "description": "这是重定向到外部网页测试",
+    "request": {
+      "uri": "/redirect",
+      "method": "get"
+    },
+    "redirectTo": "https://www.baidu.com"
+  },
+  {
+    "description": "这是重定向到内部请求测试",
+    "request": {
+      "uri": "/redirect/topath",
+      "method": "get"
+    },
+    "redirectTo": "/redirect/new"
+  },
+  {
+    "description": "这是重定向之后的请求",
+    "request": {
+      "uri": "/redirect/new",
+      "method": "get"
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "重定向成功了"
+    }
+  }
+]

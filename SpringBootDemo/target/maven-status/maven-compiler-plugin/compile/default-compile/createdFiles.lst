@@ -1,0 +1,4 @@
+com\tao\SpringBootDemoApplication.class
+com\tao\model\User.class
+com\tao\controller\UserManager.class
+com\tao\config\SwaggerConfig.class

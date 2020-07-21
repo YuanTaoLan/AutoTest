@@ -1,0 +1,32 @@
+[
+  {
+    "description": "测试POST请求不带参数的Demo",
+    "request": {
+      "uri": "/post",
+      "method": "post"
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "这是一个没有参数的Post请求"
+    }
+  },
+  {
+    "description": "测试POST请求带参数的Demo",
+    "request": {
+      "uri": "/postwithparam",
+      "method": "post",
+      "forms": {
+        "name": "huhansan",
+        "age": "34"
+      }
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text": "这是一个带参数的Post请求，我胡汉三又回来了！"
+    }
+  }
+]
